@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>李莹课题组</title>
+		<script type='text/javascript' src='unitegallery/js/jquery-11.0.min.js'></script>	
+	<script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script>	
+
+	<link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' />
+	
+	<script type='text/javascript' src='unitegallery/themes/grid/ug-theme-grid.js'></script>
+	
+		<link rel="stylesheet" type="text/css" href="_Public_/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="_Public_/css/style.css">
+		
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="headerTopBar clearfix">
+				<div class="wrap clearfix">
+					<div class="aGroupLeft fl">
+						<a href="#">数据库登陆</a>
+						<a href="#">仪器设备</a>
+						<a href="#">常用网站</a>
+						<a href="#">校历</a>
+						<a href="#">Worktile</a>
+					</div>
+					<div class="aGroupRight fr">
+						<a href="#">常用系统</a>
+						<a href="#">公共服务</a>
+						<a href="#">图书馆</a>
+						<a href="#">学生</a>
+						<a href="#">English</a>
+					</div>
+				</div>
+			</div>
+			<div class="logo"></div>
+			<div class="navigation">
+				<div class="wrap clearfix">
+					<ul class="menu">
+						<li class="active">
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a>科研</a>
+						</li>
+						<li>
+							<a>教学</a>
+						</li>
+						<li>
+							<a>组员</a>
+						</li>
+						<li>
+							<a>招聘</a>
+						</li>
+						<li>
+							<a>新闻</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!-- /header -->
+		<div class="indexTop clearfix" style="margin-left:0px;margin-right: 0px;margin-top: 0;">
+			<div class="banner fl">
+				<div class="bannerList">
+					<a href="#"><img src="_Public_/images/1.png" title="岂止于大"></a>
+					<a href="#"><img src="_Public_/images/logo.png" title="海纳百川"></a>
+					<a href="#"><img src="_Public_/images/logo.png" title="有容乃大"></a>
+					<a href="#"><img src="_Public_/images/logo.png" title="无欲则刚"></a>
+				</div>
+				<div class="bannerBtns">
+					<span index='1'></span>
+					<span index='2'></span>
+					<span index='3'></span>
+					<span index='4'></span>
+				</div>
+				
+				<p class="bannerTitle" style="padding-left: 50px;">课题组网站开通</p>
+				<a href="javascript:;" class="bannerPrev arrow">&lt;</a>
+				<a href="javascript:;" class="bannerNext arrow">&gt;</a>
+			</div>
+		</div>
+		<div class="wrap" style="margin-top: 50px;">
+			<div id="gallery" style="display:none;">
+	
+		<img alt="中央气象台实时天气"
+			 src="unitegallery/images/1.jpg"
+			 data-image="unitegallery/images/1.jpg"
+			 data-description="中央气象台实时天气">
+		
+		<img alt="雷达图"
+			 src="unitegallery/images/2.png"
+			 data-image="unitegallery/images/2.png"
+			 data-description="雷达图">
+
+		<img alt="降水量"
+			 src="unitegallery/images/3.jpg"
+			 data-image="unitegallery/images/3.jpg"
+			 data-description="降水量">
+			 
+		<img alt="气温"
+			 src="unitegallery/images/4.jpg"
+			 data-image="unitegallery/images/4.jpg"
+			 data-description="气温">
+			
+
+
+
+			 
+	</div>
+		</div>
+
+		<footer class="footer">
+			<div class="footContent">
+				<div class="aGroup">
+					<a>友情链接</a>
+				</div>
+				<p>© 2017 All Rights Reserved. Leo<br/>地址：广东省深圳市南山区学苑大道1088号</p>
+			</div>
+			<div class="footImg">
+				<img src="_Public_/images/footImg.png" width="100" height="100">
+			</div>
+		</footer>
+		<script src='_Public_/js/js.js'></script>
+		<script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script>
+		<script type='text/javascript' src='unitegallery/themes/grid/ug-theme-grid.js'></script>
+	</body>
+	<script type="text/javascript">
+
+		jQuery(document).ready(function(){
+
+			jQuery("#gallery").unitegallery();
+		});
+		var length=0;
+		$("img").each(function(){
+			if(this.hasAttribute("title")) $(this).css("min-width",$(document).width()+"px");
+		})
+//		$(":img.bannerList").each(function(){
+//			$(this).css("min-width",$(document).width()+"px");
+//			//$(this).css("width","");
+//		});
+	</script>
+</html>

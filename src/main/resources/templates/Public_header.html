@@ -1,0 +1,55 @@
+<div class="header">
+    <div class="headerTopBar clearfix">
+        <div class="wrap clearfix">
+            <div class="aGroupLeft fl">
+                <a href="http://ohr.sustc.edu.cn/sustczp/zhaopin.jsp" target="_blank">人才招聘</a>
+                <a href="http://www.sustc.edu.cn/public_service" target="_blank">公共服务</a>
+                <a href="http://www.sustc.edu.cn/announcements" target="_blank">通知公告</a>
+                <a href="http://www.sustc.edu.cn/news_events" target="_blank">新闻动态</a>
+                <a href="http://www.sustc.edu.cn/openinfo" target="_blank">信息公开</a>
+                <!--<a href="#">校长信箱</a>-->
+            </div>
+            <div class="aGroupRight fr">
+                <a href="http://www.sustc.edu.cn/system" target="_blank">常用系统</a>
+                <a href="http://lib.sustc.edu.cn/" target="_blank">图书馆</a>
+                <a href="http://www.sustc.edu.cn/calendar" target="_blank">校历</a>
+                <a href="http://www.sustc.edu.cn/channel_students" target="_blank">学生</a>
+                <a href="http://www.sustc.edu.cn/channel_faculty" target="_blank">教工</a>
+                <a href="http://sustc.edu.cn/campus_shuyuan" target="_blank">书院</a>
+                <a href="?lang=en">English</a>
+            </div>
+        </div>
+    </div>
+    <div class="logo"></div>
+    <div class="navigation">
+        <div class="wrap clearfix">
+            <ul class="menu">
+                <li class="home {if $pid==0} active {/if}" style="width: 162px;"><a href="{:url('index/index')}">首页</a></li>
+
+                {volist name='nav' id='nav'}
+                <li {if $pid==$nav.id}class="active"{/if}><a href="javascript:void(0);" style="cursor: default;">{$nav.title}</a>
+                    <ul class="subMenu">
+                        {if $nav.child}
+                            {volist name='nav.child' id='nav_2'}
+                                {if $nav_2.child}
+                                <li><a href="javascript:void(0);" onclick="javascript:return false;" style="cursor: default;">{$nav_2.title}</a><span>></span>
+                                    <ul class="thirdMenu">
+                                        {volist name='nav_2.child' id='nav_3'}
+                                        <li><a href="{$nav_3.url}">{$nav_3.title}</a></li>
+                                        {/volist}
+                                    </ul>
+                                </li>
+                                {else}
+                                <li><a href="{$nav_2.url}">{$nav_2.title}</a></li>
+                                {/if}
+                            {/volist}
+                        {/if}
+                    </ul>
+                </li>
+                {/volist}
+
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- /header -->

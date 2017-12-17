@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>2016“深圳杯”数学建模挑战赛在我校开幕</title>
+    <link rel="stylesheet" type="text/css" href="_Public_/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="_Public_/css/style.css">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=4GMYpl2f1Vt8ZSw2uH421ktOrYFZzLx3"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="headerTopBar clearfix">
+            <div class="wrap clearfix">
+                <div class="aGroupLeft fl">
+                    <a href="12.html">人才招聘</a>
+                    <a href="#">公共服务</a>
+                    <a href="#">通知公告</a>
+                    <a href="#">新闻动态</a>
+                    <a href="#">信息公开</a>
+                    <a href="#">校长信箱</a>
+                </div>
+                <div class="aGroupRight fr">
+                    <a href="#">常用系统</a>
+                    <a href="#">图书馆</a>
+                    <a href="#">校历</a>
+                    <a href="#">学生</a>
+                    <a href="#">校工</a>
+                    <a href="#">书院</a>
+                    <a href="#">English</a>
+                </div>
+            </div>
+        </div>
+        <div class="logo"></div>
+        <div class="navigation">
+            <div class="wrap clearfix">
+                <ul class="menu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="2.html">本系介绍</a>
+                        <ul class="subMenu clearfix">
+                            <li><a href="2.html">院系介绍</a></li>
+                            <li><a href="3.html">人员构成</a><span>></span>
+                                <ul class="thirdMenu">
+                                    <li><a href="3.html">教学人员</a></li>
+                                    <li><a href="#">访问学者</a></li>
+                                    <li><a href="#">行政人员</a></li>
+                                    <li><a href="#">毕业生</a></li>
+                                    <li><a href="#">校友</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="4.html">人才培养</a>
+                        <ul class="subMenu">
+                            <li><a href="4.html">本科生培养</a></li>
+                            <li><a href="5.html">研究生培养</a></li>
+                            <li><a href="6.html">资料下载</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="7.html">学术科研</a>
+                    <ul class="subMenu">
+                            <li><a href="7.html">研究方向</a></li>
+                            <li><a href="14.html">重点实验室</a></li>
+                            <li><a href="15.html">科研团队</a></li>
+                        </ul></li>
+                    <li><a href="8.html">新闻动态</a>
+                        <ul class="subMenu">
+                            <li><a href="8.html">新闻</a></li>
+                            <li><a href="10.html">学术交流</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="12.html">人才招聘</a>
+                        <ul class="subMenu">
+                            <li><a href="12.html">老师</a></li>
+                            <li><a href="#">员工</a></li>
+                            <li><a href="#">博士后</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+    <div class="wrap">
+        <div class="content clearfix contact">
+            <h3 class="title">联系我们</h3>
+            <div class="guide">
+                <p>地址：深圳市南山区西丽学苑大道1088号南方科技大学慧园3栋401办公室
+		</p>
+                <p>邮政编码：518055</p>
+                <p>电话：+86-755-88018703 余老师</p>
+                <p>地铁：塘朗站，从C出口出，步行500米即到学校正门</p>
+                <p>公交车：南方科技大学站，路线：M369，43，74，81</p>
+            </div>
+            <div class="map">
+                <div style="width:1140px;height:700px;border:#ccc solid 1px;font-size:12px" id="map">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footContent">
+            <div class="aGroup">
+                <a href="2.html">院系介绍</a>
+                <a href="10.html">学术交流</a>
+                <a href="7.html">学术科研</a>
+                <a href="8.html">新闻动态</a>
+                <a href="12.html">人才招聘</a>
+                <a href="13.html">联系我们</a>
+            </div>
+            <p>© 2015 All Rights Reserved. 粤ICP备14051456号<br/>地址：广东省深圳市南山区学苑大道1088号 电话：+86-755-8801 0000 邮编：518055</p>
+        </div>
+        <div class="footImg">
+            <img src="_Public_/images/footImg.png" width="100" height="100">
+        </div>
+    </footer>
+    <script src='_Public_/js/jquery-3.1.1.min.js'></script>
+    <script src='_Public_/js/js.js'></script>
+    <script type="text/javascript">
+    function initMap() {
+        createMap(); //创建地图
+        setMapEvent(); //设置地图事件
+        addMapControl(); //向地图添加控件
+        addMapOverlay(); //向地图添加覆盖物
+    }
+
+    function createMap() {
+        map = new BMap.Map("map");
+        map.centerAndZoom(new BMap.Point(114.005005, 22.601378), 15);
+    }
+
+    function setMapEvent() {
+        map.enableScrollWheelZoom();
+        map.enableDoubleClickZoom();
+        map.setMinZoom(12);
+        map.setMaxZoom(17);
+    }
+
+    function addClickHandler(target, window) {
+        target.addEventListener("click", function() {
+            target.openInfoWindow(window);
+        });
+    }
+
+    function addMapOverlay() {
+        var markers = [];
+        for (var index = 0; index < markers.length; index++) {
+            var point = new BMap.Point(markers[index].position.lng, markers[index].position.lat);
+            var marker = new BMap.Marker(point, {
+                icon: new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png", new BMap.Size(20, 25), {
+                    imageOffset: new BMap.Size(markers[index].imageOffset.width, markers[index].imageOffset.height)
+                })
+            });
+            var label = new BMap.Label(markers[index].title, {
+                offset: new BMap.Size(25, 5)
+            });
+            var opts = {
+                width: 200,
+                title: markers[index].title,
+                enableMessage: false
+            };
+            var infoWindow = new BMap.InfoWindow(markers[index].content, opts);
+            marker.setLabel(label);
+            addClickHandler(marker, infoWindow);
+            map.addOverlay(marker);
+        };
+        var plOpts = [{
+            strokeColor: "#00f",
+            strokeWeight: "3",
+            strokeOpacity: "0.6"
+        }];
+        var plPath = [
+            [
+                new BMap.Point(114.009829, 22.609377),
+                new BMap.Point(114.009254, 22.608877),
+                new BMap.Point(114.009326, 22.607008),
+                new BMap.Point(114.00947, 22.606541),
+                new BMap.Point(114.010619, 22.604072),
+                new BMap.Point(114.011122, 22.603438),
+                new BMap.Point(114.011158, 22.603338),
+                new BMap.Point(114.007996, 22.600836),
+                new BMap.Point(114.006882, 22.600269),
+                new BMap.Point(114.006739, 22.600169),
+                new BMap.Point(114.005948, 22.599635),
+                new BMap.Point(114.004834, 22.599635),
+                new BMap.Point(114.0039, 22.600202),
+                new BMap.Point(114.003074, 22.600502),
+                new BMap.Point(114.00178, 22.599935),
+                new BMap.Point(114.001529, 22.602537),
+                new BMap.Point(114.003217, 22.603372),
+                new BMap.Point(114.003002, 22.60484),
+                new BMap.Point(114.001708, 22.606041),
+                new BMap.Point(114.001457, 22.608443),
+                new BMap.Point(114.005445, 22.609043),
+                new BMap.Point(114.007026, 22.609878),
+                new BMap.Point(114.009793, 22.60931),
+                new BMap.Point(114.009793, 22.60931),
+                new BMap.Point(114.009793, 22.60931),
+                new BMap.Point(114.009793, 22.60931)
+            ],
+        ];
+        for (var index = 0; index < plOpts.length; index++) {
+            var polyline = new BMap.Polyline(plPath[index], plOpts[index]);
+            map.addOverlay(polyline);
+        }
+    }
+    //向地图添加控件
+    function addMapControl() {
+        var scaleControl = new BMap.ScaleControl({
+            anchor: BMAP_ANCHOR_BOTTOM_LEFT
+        });
+        scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+        map.addControl(scaleControl);
+        var navControl = new BMap.NavigationControl({
+            anchor: BMAP_ANCHOR_TOP_LEFT,
+            type: BMAP_NAVIGATION_CONTROL_LARGE
+        });
+        map.addControl(navControl);
+        var overviewControl = new BMap.OverviewMapControl({
+            anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
+            isOpen: true
+        });
+        map.addControl(overviewControl);
+    }
+    var map;
+    initMap();
+    </script>
+</body>
+
+</html>

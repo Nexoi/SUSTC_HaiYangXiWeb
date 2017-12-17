@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>本系介绍-院系介绍</title>
+    <link rel="stylesheet" type="text/css" href="_Public_/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="_Public_/css/style.css">
+</head>
+
+<body>
+<header class="header">
+    <div class="headerTopBar clearfix">
+        <div class="wrap clearfix">
+            <div class="aGroupLeft fl">
+                <a href="/12.html">人才招聘</a>
+                <a href="/13.html">公共服务</a>
+                <a href="/14.html">通知公告</a>
+                <a href="/15.html">新闻动态</a>
+                <a href="/16.html">信息公开</a>
+                <a href="/17.html">校长信箱</a>
+            </div>
+            <div class="aGroupRight fr">
+                <a href="/17.html">常用系统</a>
+                <a href="/18.html">图书馆</a>
+                <a href="/19.html">校历</a>
+                <a href="/20.html">学生</a>
+                <a href="/21.html">校工</a>
+                <a href="/22.html">书院</a>
+                <a href="/23.html">English</a><!-- ??? -->
+            </div>
+        </div>
+    </div>
+    <div class="logo"></div>
+    <div class="navigation">
+        <div class="wrap clearfix">
+            <ul class="menu">
+                <li><a href="/">首页</a></li>
+                <li class="active"><a href="/2.html">本系介绍</a>
+                    <ul class="subMenu clearfix">
+                        <li><a href="/2.html">院系介绍</a></li>
+                        <li><a href="/3.html">人员构成</a><span>></span>
+                            <ul class="thirdMenu">
+                                <li><a href="/article/212.html.html">教学人员</a></li>
+                                <li><a href="/article/324.html">访问学者</a></li>
+                                <li><a href="/article/222.html">行政人员</a></li>
+                                <li><a href="/article/435.html">毕业生</a></li>
+                                <li><a href="/article/564.html">校友</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="/4.html">人才培养</a>
+                    <ul class="subMenu">
+                        <li><a href="/article/324.html">本科生培养</a></li>
+                        <li><a href="/article/324.html">研究生培养</a></li>
+                        <li><a href="/article/324.html">资料下载</a></li>
+                    </ul>
+                </li>
+                <li><a href="/7.html">学术科研</a>
+                    <ul class="subMenu">
+                        <li><a href="/article/324.html">研究方向</a></li>
+                        <li><a href="/article/324.html">重点实验室</a></li>
+                        <li><a href="/article/324.html">科研团队</a></li>
+                    </ul>
+                </li>
+                <li><a href="/8.html">新闻动态</a>
+                    <ul class="subMenu">
+                        <li><a href="/article/324.html">新闻</a></li>
+                        <li><a href="/article/324.html">学术交流</a></li>
+                    </ul>
+                </li>
+                <li><a href="/12.html">人才招聘</a>
+                    <ul class="subMenu">
+                        <li><a href="/article/324.html">老师</a></li>
+                        <li><a href="/article/324.html">员工</a></li>
+                        <li><a href="/article/324.html">博士后</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- /header -->
+<div class="wrap">
+    <div class="content clearfix">
+        <div class="conNavBar fl">
+            <h3 class="title">本系介绍</h3>
+            <ul class="navList">
+                <li><a href="/2.html" class="active">院系介绍</a></li>
+                <li><a href="/3.html">人员构成<span>></span></a>
+                    <ul class="navSubMenu">
+                        <li><a href="/article/324.html">教学人员</a></li>
+                        <li><a href="/article/325.html">访问学者</a></li>
+                        <li><a href="/article/326.html">行政人员</a></li>
+                        <li><a href="/article/327.html">毕业生</a></li>
+                        <li><a href="/article/328.html">校友</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="conCommon  college fr">
+            <h3 class="title" th:text="${info.title}">院系介绍</h3>
+
+            <div th:utext="${detail.text}"></div>
+            <!--<div class="collegeImg fr">-->
+            <!--<img src="_Public_/images/contentImg.png">-->
+            <!--</div>-->
+            <!--<p> &emsp;&emsp;数学是各门学科的基础和工具，当今数学几乎深入到我们能想到的一切方面，它不仅已成功地运用到了各个科学技术领域，如信息、航天、医药、材料、能源、生物、环境等，在社会科学领域如经济学、语言学、系统科学、管理科学也占据着越来越重要的地位。</p>-->
+            <!--<p> &emsp;&emsp; 数学系是2015年新成立的重点院系，数学系的成立对于以理工科为主的学校发展起着举足轻重的作用，为学校各个专业提供数学支持，同时为学校培养一批具有良好数学基础的科技创新型人才服务。目前我系已引进一批非常优秀的专业人才，共有专职教师32人，有讲座教授5名，教授7名，访问教授1名，副教授1名，助理教授5名，访问助理教授4名，教学系列人员9名，其中千人计划3名，长江学者2名，国家杰出青年科学基金（海外）获得者2名，青年千人1名。研究领域涉及数学的各个方向，包括基础数学、应用数学、金融数学、计算数学、统计学等，大部分专任教师拥有国外著名高等院校和研究机构的教学科研经验，视野开阔、知识深厚、责任心强。-->
+            <!--</p>-->
+            <!--<p> &emsp;&emsp;数学系遵照学校建立高水平研究型大学的办学宗旨，全力为学生营造一流的学习环境，配备门类齐全的图书资料，设立专门的数学实验室，提供多种类型的奖学金和科研资助。同时根据国际化的办学方针，积极开展国际合作办学，将与多所国际知名高校的相关院系建立形式多样、内容丰富的人才培养合作项目。本着加强基础、重视应用、因材施教、分流培养的指导思想培养各个专业方向的优秀创新型人才。-->
+            <!--</p>-->
+            <!--<p> &emsp;&emsp; 数学系现已有金融数学专业和数学与应用数学两个本科专业，计划申报统计学及信息与计算科学两个本科专业。-->
+            <!--</p>-->
+            <!--<p>&emsp;&emsp;金融数学专业是以现代数学（尤其是随机过程与随机分析）为基本方法，以计算机技术为基本工具来研究金融学问题的新型交叉学科，在现代金融学发展中起着重大作用。金融数学旨在培养具有扎实的现代数学基础，熟练使用计算机的技能及深厚广泛的金融专业知识，能够将所学的专业知识应用到具体金融实践当中去的复合型优秀人才。金融数学专业毕业生将能熟练运用数学知识和数据分析方法，从事某些金融保险实际工作，并可继续深造，到高等学校和科研机构应用数学、经济和金融管理等专业做研究生。-->
+            <!--</p>-->
+            <!--<p> &emsp;&emsp;数学与应用数学专业的培养目标是培养具有扎实深厚的数学功底，较强的应用数学知识解决实际问题的能力，能熟练运用计算机（包括常用语言、工具及数学软件）及具有初步应用程序开发的能力，富有创新精神，能够进行跨学科交叉合作的优秀人才。经过四年学习，使学生初步具备在基础数学或应用数学某个方向从事当代学术前沿问题研究的能力。学生毕业后可继续攻读数学、计算机、信息科学、经济、金融与管理科学等方向的研究生。-->
+            <!--</p>-->
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footContent">
+        <div class="aGroup">
+            <a href="/2.html">院系介绍</a>
+            <a href="/10.html">学术交流</a>
+            <a href="/7.html">学术科研</a>
+            <a href="/8.html">新闻动态</a>
+            <a href="/12.html">人才招聘</a>
+            <a href="/13.html">联系我们</a>
+        </div>
+        <p>© 2015 All Rights Reserved. 粤ICP备14051456号<br/>地址：广东省深圳市南山区学苑大道1088号 电话：+86-755-8801 0000 邮编：518055</p>
+    </div>
+    <div class="footImg">
+        <img src="_Public_/images/footImg.png" width="100" height="100">
+    </div>
+</footer>
+<script src='_Public_/js/jquery-3.1.1.min.js'></script>
+<script src='_Public_/js/js.js'></script>
+</body>
+
+</html>
